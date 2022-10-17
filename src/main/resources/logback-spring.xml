@@ -5,14 +5,10 @@
         <destination>localhost:5000</destination>
         <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
             <providers>
-                <mdc>
-                    <includeMdcKeyName>logs.id_cliente</includeMdcKeyName>
-                    <includeMdcKeyName>logs.id_algo</includeMdcKeyName>
-                </mdc>
+                <mdc />
                 <context />
                 <logLevel />
                 <loggerName />
-                <includeMdc>true</includeMdc>
                 <pattern>
                     <pattern>
                         {
